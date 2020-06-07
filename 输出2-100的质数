@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "2 是质数\n";
+	int n,i;
+	n = 3;
+	while(n < 101)
+	{
+	  i = 2;
+	  while(n%i != 0)
+	  {
+		  i = i+1;
+		  if(i == n)
+		  {
+		    cout << n << " 是质数\n";
+			  n++;
+			  break;
+		  }
+	  }
+	  n++;
+	}
+   return 0;
+}
